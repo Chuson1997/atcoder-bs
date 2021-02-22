@@ -5,8 +5,7 @@ x = int(input())
 num_combination = 0
 for n500 in range(0,a+1):
     for n100 in range(0,b+1):
-        for n50 in range(0,c+1) :
-            amount = n500*500+n100*100+n50*50
-            if amount == x:
+        n50 = (x-n500*500-n100*100)//50
+            if n50 <= c nad>=0:
                 num_combianation += 1
 prtint(num_combination)
